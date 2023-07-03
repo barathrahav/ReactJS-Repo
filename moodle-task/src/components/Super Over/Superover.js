@@ -1,20 +1,15 @@
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
+import React from "react";
+import "./Superover.css";
 
 function Super() {
     return (
-      <Container>
-        <Row>
-          <Col xs={6} md={4}>
-            <Image src="https://assets.ccbp.in/frontend/react-js/rcb-img.png" />
-          </Col>
-          <Col xs={6} md={4}>
-            <Image src="https://assets.ccbp.in/frontend/react-js/csk-img.png" />
-          </Col>
-        </Row>
-      </Container>
+      <div className="container-fluid text-center">
+      <h1 className="text-light">Super Over League</h1>
+      <div>
+          <img src="https://assets.ccbp.in/frontend/react-js/rcb-img.png"  alt="RCB" />
+          <img src="https://assets.ccbp.in/frontend/react-js/csk-img.png"  alt="CSK" />
+      </div>
+    </div>
     );
   }
   
