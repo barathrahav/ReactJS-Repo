@@ -1,0 +1,16 @@
+.congratsContainer {
+  background-image: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png");
+}
+p {
+  font-size: larger;
+  font-weight: 500;
+}
+.congratsContent {
+  height: 450px;
+  width: 400px;
+  background-color: aqua;
+}
+.imgprofile,
+.imgwatch {
+  margin-top: 20px;
+}
