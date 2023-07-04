@@ -4,11 +4,15 @@ import { Hello } from './components/Hello World/Helloworld';
 import 'bootstrap/dist/css/bootstrap.css';
 import Congrats from './components/Congrats Card/Congratscard';
 import Super from './components/Super Over/Superover';
+import Social from './components/Social Button/Socialbutton';
 
 function App() {
   return (
     <>
-    <Super />
+    {/* <Hello /> */}
+    {/* <Congrats /> */}
+    {/* <Super /> */}
+    <Social />
     </>
     
   );

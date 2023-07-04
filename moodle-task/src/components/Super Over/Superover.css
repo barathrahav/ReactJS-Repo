@@ -2,9 +2,3 @@
     background-color: #03012e;
     height: 100vh;
 }
-  
-@media (max-width: 767px) {
-    .col-md-6 {
-      margin-bottom: 20px;
-    }
-}
