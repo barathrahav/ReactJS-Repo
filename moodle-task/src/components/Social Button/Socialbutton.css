@@ -1,9 +1,21 @@
-.container-fluid{
+.Social {
     background-image: url("https://images7.alphacoders.com/109/thumb-1920-1093506.jpg");
     height: 100vh;
     width: 100vw;
-    background-size:cover;
-}
-h1{
+    background-size: cover;
+  }
+  
+  .SocialTitle {
     font-size: 50px;
-}
+  }
+  
+  @media (max-width: 576px) {
+    .Social {
+      padding: 2rem;
+    }
+  
+    .SocialTitle {
+      font-size: 36px;
+    }
+  }
+  

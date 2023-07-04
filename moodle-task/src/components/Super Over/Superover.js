@@ -3,7 +3,7 @@ import "./Superover.css";
 
 function Super() {
     return (
-      <div className="container-fluid text-center">
+      <div className="Super text-center">
       <h1 className="text-light">Super Over League</h1>
       <div>
           <img src="https://assets.ccbp.in/frontend/react-js/rcb-img.png"  alt="RCB" />
