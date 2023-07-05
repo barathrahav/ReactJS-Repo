@@ -18,7 +18,7 @@ function Notification() {
       <div className="bg-warning fs-2 p-3 rounded mt-4 text-light w-50 m-auto">
         <FontAwesomeIcon icon={faBell} /> Warning Message
       </div>
-      <div className="bg-danger fs-2 p-3 rounded mt-4 text-light w-50 m-auto">
+      <div className="Error bg-danger fs-2 p-3 rounded mt-4 text-light w-50 m-auto">
         <FontAwesomeIcon icon={faCircleExclamation} /> Error Message
       </div>
     </div>

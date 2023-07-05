@@ -1,0 +1,38 @@
+.Techcover {
+    background-color: cadetblue;
+    height: 110vh;
+  }
+  .Techcont {
+    height: 50%;
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    .Techcover {
+      background-color: cadetblue;
+      height: 100%;
+    }
+    .Techcont {
+      width: 50%;
+    }
+    .data,
+    .iot,
+    .vr,
+    .ml {
+      height: auto;
+      width: 25%;
+    }
+  }
+  @media (max-width: 768px) {
+    .Techcover {
+      background-color: cadetblue;
+      height: 100%;
+    }
+    .data,
+    .iot,
+    .vr,
+    .ml {
+      height: auto;
+      width: 25%;
+    }
+  }
+  

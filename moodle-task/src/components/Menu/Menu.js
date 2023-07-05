@@ -36,20 +36,39 @@ function Menu() {
                 Super Over
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/Social">
-                Social Button
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/Notification">
-                Notification App
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/Login">
-                Login Design
-              </Link>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More Tasks
+              </a>
+              <ul class="dropdown-menu navbar-dark bg-dark">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Notification">
+                    Notification App
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Social">
+                    Social Button
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Login">
+                    Login Design
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Technology">
+                    Technology Card
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

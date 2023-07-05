@@ -1,41 +1,20 @@
-input {
-  background-color: rgba(0, 0, 0, 0.2);
+.Loginbg {
+  height: 100vh;
+  width: 100%;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 }
-img {
-  display: block;
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
-h1 {
-  font-size: 24px;
-}
-
-p {
-  font-size: 16px;
+.Logincontainer {
+  height: 90%;
+  width: 85%;
+  background-color: whitesmoke;
 }
 @media (max-width: 768px) {
-  img{
-    max-width: 100%;
+    .Logincontainer {
+      width: 90%;
+    }
+    .laptop{
+        height: 75%;
+        width: 75%;
+    }
   }
-  h1 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  img {
-    max-width: 100%;
-  }
-  h1 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 12px;
-  }
-}

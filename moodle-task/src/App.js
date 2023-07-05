@@ -10,7 +10,7 @@ import Social from "./components/Social Button/Socialbutton";
 import Menu from "./components/Menu/Menu";
 import Notification from "./components/Notification/Notificationapp";
 import Login from "./components/Login Design/Logindesign";
-
+import Technology from './components/Technology Card/Technologycard';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/Social" element={<Social />} />
         <Route path="/Notification" element={<Notification />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Technology" element={<Technology/>} />
       </Routes>
     </BrowserRouter>
   );
