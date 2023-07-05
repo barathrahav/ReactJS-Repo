@@ -23,7 +23,7 @@ function Menu() {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                Hello
+                Hello World
               </Link>
             </li>
             <li className="nav-item">
@@ -44,6 +44,11 @@ function Menu() {
             <li className="nav-item">
               <Link className="nav-link" to="/Notification">
                 Notification App
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Login">
+                Login Design
               </Link>
             </li>
           </ul>

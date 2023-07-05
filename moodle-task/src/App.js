@@ -9,6 +9,7 @@ import Super from "./components/Super Over/Superover";
 import Social from "./components/Social Button/Socialbutton";
 import Menu from "./components/Menu/Menu";
 import Notification from "./components/Notification/Notificationapp";
+import Login from "./components/Login Design/Logindesign";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Super" element={<Super />} />
         <Route path="/Social" element={<Social />} />
         <Route path="/Notification" element={<Notification />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
