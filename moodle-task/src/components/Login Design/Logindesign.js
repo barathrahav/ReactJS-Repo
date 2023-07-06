@@ -44,7 +44,7 @@ function Login() {
                 aria-describedby="basic-addon1"
               />
             </div>
-            <a href="#" className="btn btn-success p-2 m-3 w-75 rounded-5">
+            <a href="#" className="btn btn-success p-2 m-3 w-50 rounded-5">
               Login
             </a>
             <h5>
