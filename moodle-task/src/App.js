@@ -11,6 +11,10 @@ import Menu from "./components/Menu/Menu";
 import Notification from "./components/Notification/Notificationapp";
 import Login from "./components/Login Design/Logindesign";
 import Technology from './components/Technology Card/Technologycard';
+import Hooks from "./components/Hooks Assignment/Hooksassignment";
+import FruitCounter from "./components/Fruits Counter/Fruitcounter";
+import Feedback from "./components/Feedback App/Feedbackapp";
+import ThankYouPage from "./components/Feedback App/Feedbackout";
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Route path="/Notification" element={<Notification />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Technology" element={<Technology/>} />
+        <Route path="/Hooks" element={<Hooks />} />
+        <Route path="/FruitCounter" element={<FruitCounter />} />
+        <Route path="/Feedback" element={<Feedback />} />
+        <Route path="/ThankYouPage" element={<ThankYouPage />} />
       </Routes>
     </BrowserRouter>
   );

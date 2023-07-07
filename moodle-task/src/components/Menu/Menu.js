@@ -68,6 +68,21 @@ function Menu() {
                     Technology Card
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Hooks">
+                    Hooks Assignment
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/FruitCounter">
+                    Fruit Counter
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Feedback">
+                    Feedback App
+                  </Link>
+                </li>
               </ul>
             </li>
           </ul>

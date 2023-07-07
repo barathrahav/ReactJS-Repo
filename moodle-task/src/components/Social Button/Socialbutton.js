@@ -3,7 +3,7 @@ import "./Socialbutton.css";
 
 function Social() {
   return (
-    <div className="Social text-center">
+    <div className="Social text-center position-relative">
       <div className="position-absolute top-50 start-50 translate-middle">
         <h1 className="SocialTitle text-light fw-bold">Social Button</h1>
         <button type="button" className="btn btn-warning m-2">
