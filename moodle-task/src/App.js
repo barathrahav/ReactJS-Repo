@@ -15,6 +15,9 @@ import Hooks from "./components/Hooks Assignment/Hooksassignment";
 import FruitCounter from "./components/Fruits Counter/Fruitcounter";
 import Feedback from "./components/Feedback App/Feedbackapp";
 import ThankYouPage from "./components/Feedback App/Feedbackout";
+import Fakestore from "./components/Fakestore API/Fakestore";
+import Details from "./components/Fakestore API/Fakestoredetails";
+import DateFunction from "./components/Date Function/Datefunction";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
         <Route path="/FruitCounter" element={<FruitCounter />} />
         <Route path="/Feedback" element={<Feedback />} />
         <Route path="/ThankYouPage" element={<ThankYouPage />} />
+        <Route path="/Fakestore" element={<Fakestore/>} />
+        <Route path="/Details/:id" element={<Details />} />
+        <Route path="/DateFunction" element={<DateFunction/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -83,6 +83,16 @@ function Menu() {
                     Feedback App
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Fakestore">
+                    Fakestore API
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/DateFunction">
+                    Date Function
+                  </Link>
+                </li>
               </ul>
             </li>
           </ul>
