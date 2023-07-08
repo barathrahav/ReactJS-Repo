@@ -22,7 +22,7 @@ function Hooks() {
     <div className="container mt-5">
       <div className="card text-center">
         <div className="card-body">
-          <h1 className="card-title mb-5">Count: {count}</h1>
+          <div className="card-title mb-5 fs-1 fw-bold">Count: {count}</div>
           <div className="row">
             <div className="col">
               <img

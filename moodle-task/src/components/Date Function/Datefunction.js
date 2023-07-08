@@ -12,10 +12,12 @@ function DateFunction(){
     return(
         <>
             <div className="m-5 text-center">
-                <label>Corse Joining Date :</label>
+                <h1 className="fw-bolder text-primary">KGiSL Micro College</h1>
+                <h3 className="fw-bold text-danger">Full Stack Developer</h3>
+                <label>Course Joining Date :</label>
                 <input type="date" name="" id="date" /><br /><br />
-                <label>Corse Complition Date : {output}</label><br /><br />
-                <input type="button" value="Check" onClick={Check} />
+                <label>Course Complition Date : {output}</label><br /><br />
+                <input type="button" value="Check" className="border rounded-3 bg-info" onClick={Check} />
             </div>
         </>
     );

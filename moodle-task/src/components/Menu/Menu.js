@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Menu() {
   return (
@@ -21,11 +22,6 @@ function Menu() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Hello World
-              </Link>
-            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/Congrats">
                 Congrats Cards

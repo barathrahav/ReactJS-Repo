@@ -1,4 +1,10 @@
 .Super {
     background-color: #03012e;
-    height: 100vh;
+    height: 100%;
 }
+.team-logo {
+    width: 75%;
+    height: auto;
+    max-width: 450px;
+  }
+  

@@ -19,7 +19,7 @@ function Details() {
     <div className="container mt-5">
       <div className="row">
         <div className="col-lg-6 text-center">
-          <img src={details.image} alt="Product" className="h-50 w-50" />
+          <img src={details.image} alt="Product" className="h-75 w-75" />
         </div>
         <div className="col-lg-6">
           <div className="fs-1 fw-bold">{details.title}</div>
@@ -48,10 +48,12 @@ function Details() {
           <div className="fw-bold">
             <span className="fs-4">Description:</span> {details.description}
           </div>
-          <div>
-            <Link to="/fakestore">
-              <img src={back} alt="Back" className="back-button" />
-            </Link>
+          <div className="text-center">
+            <button className="btn btn-link">
+              <Link to="/fakestore">
+                <img src={back} alt="Back" className="img-fluid" />
+              </Link>
+            </button>
           </div>
         </div>
       </div>
