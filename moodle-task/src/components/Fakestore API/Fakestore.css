@@ -202,6 +202,7 @@
   background: #ffffff;
   border-radius: 18px;
   padding: 24px 22px;
+  margin-top: 30px;
   box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
 }
 
@@ -292,5 +293,36 @@
 
   .details-price {
     font-size: 1.4rem;
+  }
+}
+
+/* ===========================
+   DETAILS PAGE IMAGE
+   =========================== */
+
+.details-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-image {
+  width: 100%;
+  max-width: 420px;   /* Bigger than card image */
+  height: 450px;      /* Increase this if you want even bigger */
+  object-fit: contain;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .details-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-image {
+    height: 260px;
   }
 }

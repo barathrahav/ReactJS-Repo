@@ -1,21 +1,47 @@
-.Social {
-  background-image: url("https://images7.alphacoders.com/109/thumb-1920-1093506.jpg");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
+/* Full screen background */
+.social-page {
+  min-height: 100dvh;                             /* Better than 100vh */
+  background: url("https://images7.alphacoders.com/109/thumb-1920-1093506.jpg")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;                                  /* Safe padding for mobile */
+  position: relative;
 }
 
-.SocialTitle {
-  font-size: 50px;
+/* Optional dark overlay for readability */
+.social-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);                /* Slight dark layer */
+  z-index: 0;
 }
 
-@media (max-width: 576px) {
-  .Social {
-    padding: 2rem;
-  }
+/* Title styling */
+.social-title {
+  font-size: clamp(2rem, 5vw, 3rem);             /* Responsive font */
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
 
-  .SocialTitle {
-    font-size: 36px;
-  }
+/* Button container */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons style fix (optional) */
+.social-buttons .btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
 }

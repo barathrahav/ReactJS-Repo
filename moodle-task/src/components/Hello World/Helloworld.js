@@ -1,9 +1,10 @@
 import React from "react";
+import "./Hello.css";
 
 export function Hello() {
   return (
-    <h1 className="position-absolute top-50 start-50 translate-middle">
-      Hello World !
-    </h1>
+    <div className="hello-page">
+      <h1 className="hello-text">Hello World!</h1>
+    </div>
   );
 }

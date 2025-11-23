@@ -91,13 +91,8 @@ function Details() {
     <div className="fakestore-page container mt-5">
       <div className="row fakestore-details-row">
         {/* Image Section */}
-        <div className="col-lg-6 text-center mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-          <img
-            src={image}
-            alt={title}
-            className="picture img-fluid"
-            style={{ maxHeight: "350px" }}
-          />
+        <div className="col-lg-6 mb-4 mb-lg-0 details-image-wrapper">
+          <img src={image} alt={title} className="details-image" />
         </div>
 
         {/* Details Section */}
