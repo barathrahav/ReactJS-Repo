@@ -1,3 +1,4 @@
+// FruitCounter.js
 import React, { useState } from "react";
 import mangoImage from "./mango.png";
 import bananaImage from "./banana.png";
@@ -9,39 +10,44 @@ function FruitCounter() {
   const [bananaCount, setBananaCount] = useState(0);
 
   const incrementMangoCount = () => {
-    setMangoCount(mangoCount + 1);
+    setMangoCount(prev => prev + 1);
   };
 
   const incrementBananaCount = () => {
-    setBananaCount(bananaCount + 1);
+    setBananaCount(prev => prev + 1);
   };
 
+  const fruits = [
+    { img: mangoImage, label: "Mango", onClick: incrementMangoCount },
+    { img: bananaImage, label: "Banana", onClick: incrementBananaCount },
+  ];
+
   return (
-    <div className="Fruit">
-      <div className="container pt-5">
-        <div className="row justify-content-center">
-          <div className="col-md-6">
-            <div className="Fruit-container rounded-5">
-              <div className="text-center">
-                <img src={crateImage} alt="Crate" className="img-fluid" />
-              </div>
-              <h2 className="text-center">
-                Barath ate <span className="yellow">{mangoCount}</span>{" Mangoes "}
-                and <span className="yellow">{bananaCount}</span>{" Bananas"}.
-              </h2>
-              <div className="d-flex justify-content-center">
-                <button
-                  className="btn btn-link me-2"
-                  onClick={incrementMangoCount}
-                >
-                  <img src={mangoImage} alt="Mango" />
-                </button>
-                <button className="btn btn-link" onClick={incrementBananaCount}>
-                  <img src={bananaImage} alt="Banana" />
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="Fruit d-flex justify-content-center align-items-center min-vh-100">
+      <div className="Fruit-container rounded-4 p-4 text-center">
+        <img
+          src={crateImage}
+          alt="Fruit Crate"
+          className="crate-image mb-3"
+        />
+
+        <h2 className="fw-bold">
+          Barath ate{" "}
+          <span className="yellow">{mangoCount}</span> Mangoes and{" "}
+          <span className="yellow">{bananaCount}</span> Bananas.
+        </h2>
+
+        <div className="d-flex justify-content-center gap-4 mt-4">
+          {fruits.map((item) => (
+            <button
+              key={item.label}
+              className="fruit-btn"
+              onClick={item.onClick}
+            >
+              <img src={item.img} alt={`Eat ${item.label}`} />
+              <div className="fruit-label">{item.label}</div>
+            </button>
+          ))}
         </div>
       </div>
     </div>

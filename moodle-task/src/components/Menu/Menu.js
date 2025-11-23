@@ -1,14 +1,35 @@
+// Menu.js
 import React from "react";
-import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Menu() {
+  const mainLinks = [
+    { to: "/Congrats", label: "Congrats Cards" },
+    { to: "/Super", label: "Super Over" },
+  ];
+
+  const moreLinks = [
+    { to: "/Notification", label: "Notification App" },
+    { to: "/Social", label: "Social Button" },
+    { to: "/Login", label: "Login Design" },
+    { to: "/Technology", label: "Technology Card" },
+    { to: "/Hooks", label: "Hooks Assignment" },
+    { to: "/FruitCounter", label: "Fruit Counter" },
+    { to: "/Feedback", label: "Feedback App" },
+    { to: "/Fakestore", label: "Fakestore API" },
+    { to: "/DateFunction", label: "Date Function" },
+  ];
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
+        {/* Brand */}
         <Link className="navbar-brand" to="/">
           Moodle Task
         </Link>
+
+        {/* Toggler (Mobile) */}
         <button
           className="navbar-toggler"
           type="button"
@@ -18,77 +39,57 @@ function Menu() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
+
+        {/* Nav Items */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/Congrats">
-                Congrats Cards
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/Super">
-                Super Over
-              </Link>
-            </li>
+            {/* Main links */}
+            {mainLinks.map((item) => (
+              <li className="nav-item" key={item.to}>
+                <NavLink
+                  className={({ isActive }) =>
+                    "nav-link" + (isActive ? " active" : "")
+                  }
+                  to={item.to}
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
 
-            <li class="nav-item dropdown">
+            {/* Dropdown */}
+            <li className="nav-item dropdown">
+              {/* Use <a> so Bootstrap styles/aligns it perfectly */}
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
+                id="moreTasksDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                onClick={(e) => e.preventDefault()} // avoid scroll to top
               >
                 More Tasks
               </a>
-              <ul class="dropdown-menu navbar-dark bg-dark">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Notification">
-                    Notification App
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Social">
-                    Social Button
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Login">
-                    Login Design
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Technology">
-                    Technology Card
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Hooks">
-                    Hooks Assignment
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/FruitCounter">
-                    Fruit Counter
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Feedback">
-                    Feedback App
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Fakestore">
-                    Fakestore API
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/DateFunction">
-                    Date Function
-                  </Link>
-                </li>
+
+              <ul
+                className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="moreTasksDropdown"
+              >
+                {moreLinks.map((item) => (
+                  <li key={item.to}>
+                    <NavLink
+                      className={({ isActive }) =>
+                        "dropdown-item" + (isActive ? " active" : "")
+                      }
+                      to={item.to}
+                    >
+                      {item.label}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </li>
           </ul>

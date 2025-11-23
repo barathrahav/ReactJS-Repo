@@ -1,4 +1,4 @@
-.Feedout {
+/* .Feedout {
     background: radial-gradient(
         rgba(238,174,202,1) 0%,
         rgba(148,187,233,1) 100%
@@ -8,4 +8,40 @@
 .Feedout-container {
     background-color: whitesmoke;
     padding: 20px;
-  }
+  } */
+
+/* Background for thank you page */
+.Feedout {
+  background: radial-gradient(circle at 25% 25%, #eeaeca 0%, #94bbe9 80%);
+min-height: 100dvh;
+
+}
+
+/* Card container */
+.Feedout-container {
+  background: #ffffff;
+  max-width: 450px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Main icon */
+.thankyou-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Back button styling */
+.back-btn {
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+/* Back icon in button */
+.back-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}

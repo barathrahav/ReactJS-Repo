@@ -1,53 +1,60 @@
+// Hooks.js
 import React, { useState } from "react";
 import incrementImage from "./plus.png";
 import decrementImage from "./minus.png";
 import resetImage from "./restart.png";
+import "./Hooksassignment.css";
 
 function Hooks() {
   const [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount(count + 1);
-  };
+  const increment = () => setCount((prev) => prev + 1);
 
-  const decrement = () => {
-    setCount(count - 1);
-  };
+  const decrement = () => setCount((prev) => (prev > 0 ? prev - 1 : 0));
 
-  const reset = () => {
-    setCount(0);
-  };
+  const reset = () => setCount(0);
 
+  // function Hooks() { const [count, setCount] = useState(0); 
+  // const increment = () => { setCount(count + 1); }; 
+  // const decrement = () => { setCount(count - 1); }; 
+  // const reset = () => { setCount(0); };
+ 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 counter-container">
       <div className="card text-center">
         <div className="card-body">
-          <div className="card-title mb-5 fs-1 fw-bold">Count: {count}</div>
-          <div className="row">
-            <div className="col">
-              <img
-                src={incrementImage}
-                alt="Increment"
-                className="btn smallimage"
-                onClick={increment}
-              />
-              <img
-                src={decrementImage}
-                alt="Decrement"
-                className="btn ms-2 smallimage"
-                onClick={decrement}
-              />
-            </div>
+          <h1 className="count-title mb-4">Count: {count}</h1>
+
+          {/* Increment & Decrement buttons */}
+          <div className="mb-3">
+            <button
+              type="button"
+              className="smallimage-btn me-3"
+              onClick={increment}
+            >
+              <img src={incrementImage} alt="Increment" />
+            </button>
+
+            <button
+              type="button"
+              className="smallimage-btn"
+              onClick={decrement}
+              disabled={count === 0}
+            >
+              <img src={decrementImage} alt="Decrement" />
+            </button>
           </div>
-          <div className="row mt-3">
-            <div className="col">
-              <img
-                src={resetImage}
-                alt="Reset"
-                className="btn smallimage"
-                onClick={reset}
-              />
-            </div>
+
+          {/* Reset button */}
+          <div>
+            <button
+              type="button"
+              className="smallimage-btn"
+              onClick={reset}
+              disabled={count === 0}
+            >
+              <img src={resetImage} alt="Reset" />
+            </button>
           </div>
         </div>
       </div>

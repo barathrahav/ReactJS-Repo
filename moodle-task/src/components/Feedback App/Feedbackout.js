@@ -1,3 +1,4 @@
+// ThankYouPage.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Feedbackout.css";
@@ -6,27 +7,20 @@ import back from "./back.png";
 
 function ThankYouPage() {
   return (
-    <div className="Feedout position-relative">
-      <div className="container pt-5">
-        <div className="row justify-content-center">
-          <div className="col-md-6">
-            <div className="Feedout-container rounded-5 position-absolute top-50 start-50 translate-middle w-75">
-              <div className="text-center fs-5 fw-bold p-3">
-                <div className="pb-4">
-                  <img src={love} alt="Happy" />
-                </div>
-                Thank You for your valuable feedback!
-              </div>
-              <div className="text-center">
-                <button className="btn btn-link">
-                  <Link to="/Feedback">
-                    <img src={back} alt="back" className="img-fluid" />
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="Feedout d-flex justify-content-center align-items-center min-vh-100">
+      <div className="Feedout-container rounded-4 p-5 text-center">
+        <div className="pb-4">
+          <img src={love} alt="Thank you" className="thankyou-icon" />
         </div>
+
+        <div className="fs-5 fw-bold mb-4">
+          Thank you for your valuable feedback!
+        </div>
+
+        <Link to="/Feedback" className="btn btn-outline-secondary back-btn">
+          <img src={back} alt="Back" className="back-icon me-2" />
+          Back to Feedback
+        </Link>
       </div>
     </div>
   );
