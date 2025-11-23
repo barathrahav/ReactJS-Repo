@@ -1,10 +1,41 @@
-.Super {
-    background-color: #03012e;
-    height: 100%;
+/* Full-screen dark theme background */
+.super-page {
+  min-height: 100dvh;               /* Best for mobile & desktop */
+  background-color: #03012e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;          /* vertical center */
+  align-items: center;              /* horizontal center */
+  text-align: center;
+  padding: 1rem;
 }
+
+/* Heading styling */
+.super-title {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4vw, 3rem);  
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Logo container */
+.team-logos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;                  /* so logos wrap on small screens */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual team logos */
 .team-logo {
-    width: 75%;
-    height: auto;
-    max-width: 450px;
-  }
-  
+  width: clamp(120px, 30vw, 260px);  /* responsive size */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+/* Optional hover animation */
+.team-logo:hover {
+  transform: scale(1.08);
+}

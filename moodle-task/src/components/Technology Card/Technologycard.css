@@ -1,38 +1,65 @@
-.Techcover {
-    background-color: cadetblue;
-    height: 110vh;
+/* PAGE BACKGROUND */
+.tech-page {
+  min-height: 100dvh;
+  background: cadetblue;
+  padding: 2rem 1rem;
+}
+
+/* TITLE */
+.tech-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+}
+
+.tech-subtitle {
+  font-size: 1rem;
+  color: #f1f5f9;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.tech-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  padding: 0rem 0rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD BODY */
+.tech-card-body {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+/* TEXT */
+.tech-card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.tech-card-text {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* IMAGE */
+.tech-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-top: auto;
+  align-self: flex-end;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
+  .tech-image {
+    width: 60px;
+    height: 60px;
   }
-  .Techcont {
-    height: 50%;
-    width: 100%;
-  }
-  @media (max-width: 576px) {
-    .Techcover {
-      background-color: cadetblue;
-      height: 100%;
-    }
-    .Techcont {
-      width: 50%;
-    }
-    .data,
-    .iot,
-    .vr,
-    .ml {
-      height: auto;
-      width: 25%;
-    }
-  }
-  @media (max-width: 768px) {
-    .Techcover {
-      background-color: cadetblue;
-      height: 100%;
-    }
-    .data,
-    .iot,
-    .vr,
-    .ml {
-      height: auto;
-      width: 25%;
-    }
-  }
-  
+}

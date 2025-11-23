@@ -1,35 +1,51 @@
-.congratsContainer {
-  background-image: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png");
+/* Full-page background with center content */
+.congrats-page {
+  min-height: 100dvh;
+  width: 100%;
+  background: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }
 
-.congratsTitle {
-  font-size: larger;
-  font-weight: 500;
+/* Main card */
+.congrats-card {
+  background-color: #e0f7fa; /* soft aqua instead of harsh */
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-.make {
-  height: 450px;
-  width: 400px;
-  background-color: aqua;
+/* Title */
+.congrats-title {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
 }
 
+/* Body text */
+.congrats-text {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Images */
 .imgprofile,
 .imgwatch {
-  margin-top: 20px;
+  margin-top: 16px;
+  max-width: 150px;
+  height: auto;
 }
 
 @media (max-width: 576px) {
-  .congratsContainer {
-    padding: 2rem;
-  }
-
-  .make {
-    height: auto;
-    width: 100%;
+  .congrats-page {
+    padding: 1.25rem;
   }
 
   .imgprofile,
   .imgwatch {
-    margin-top: 10px;
+    max-width: 120px;
+    margin-top: 12px;
   }
 }
